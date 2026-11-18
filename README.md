@@ -80,7 +80,7 @@ Why you can trust it:
 | You need | Why |
 |---|---|
 | An AI coding agent | Claude Code, Codex, Cursor, GitHub Copilot, Gemini CLI, Cline, Aider, opencode and many more work. |
-| A GitHub account | Entries are public repositories. Most bounties also accept a source bundle if you have no GitHub account. |
+| A GitHub account | Entries are public repositories. With no GitHub account you can enter a source bundle instead, on every bounty except guide bounties like this one. |
 | Node.js 22.18+ | Runs the kit's command line. Avoid Node 23.0–23.7: the CLI won't start on them. |
 | A Solana wallet | Rewards are paid there in USDC. The kit can create one for you. |
 
@@ -146,8 +146,8 @@ node cli/makefun.mjs grade-local --kit . --bot ../my-entry --driver docker
 2. **Start a fresh agent session inside it.** Sessions that began before the bounty opened can't be entered.
 3. **Add an open-source license**, such as MIT. Entries need an OSI-approved `LICENSE` file.
 4. **Copy in the kit's `starter/`** if there is one, and have your agent make it your own.
-5. **Let the agent write the code.** The checks match transcripts to files. Hand-written code is allowed but counts
-   less as your agent's work.
+5. **Let the agent write the code.** make.fun traces every line to the transcript turn that wrote it, so code pasted
+   in from elsewhere won't show up as your agent's work.
 6. **Add the README the bounty asks for**, from the template in its requirements, with your repository's badges
    filled in.
 
